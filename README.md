@@ -51,6 +51,8 @@ Should you be forking this repo then do not forget to star it - <img alt="GitHub
 SaitamaRobot
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/zerosquad13/SaitamaRobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-yellow?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zerosquad13/sinnerXbot.git) 
+
 ## How to setup/deploy.
 
 
