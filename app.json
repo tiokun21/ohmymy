@@ -6,13 +6,14 @@
          "anime",
          "group",
          "manager",
-         "Saitama"
+         "pain"
       ],   
+    "logo":    "https://telegra.ph/file/c226623ff79fa51e5d587.jpg",
    "repository": "https://github.com/zerosquad13/SaitamaRobot",
    "addons": [
       {
          "options": {
-            "version": "13"
+            "version": "12"
          },
          "plan": "heroku-postgresql"
       }
@@ -41,11 +42,11 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "645739169"
+         "value": "792109647"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "Anomaliii"
+         "value": "Sawada"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
@@ -71,13 +72,18 @@
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
          "value": "-xyz"
+      },  
+      "ARQ_API": {
+         "description": "Get this from @ARQRobot",
+         "value": "",
+         "required": true
       },
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": false,
          "value": "660565862 459034222 189005567 346981140 367222759"
       },
-      "SPAMWATCH_API": {
+      "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
          "value": ""
@@ -107,16 +113,16 @@
          "value": ""
       },
       "ENV": {
-         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is.",
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
          "value": "ANYTHING"
       },
       "WEBHOOK": {
-         "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is.",
+         "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
          "required": false,
          "value": ""
       },
       "PORT": {
-         "description": "Port to use for your webhooks. Better leave this as it is on heroku.",
+         "description": "Port to use for your webhooks. Better leave this as it is on heroku",
          "required": false,
          "value": ""
       },
@@ -125,7 +131,7 @@
          "required": false,
          "value": ""
       },
-      "NO_LOAD": {
+      "No_LOAD": {
          "description": "Dont load these modules cause they shit, space separation",
          "required": false,
          "value": "cleaner rss connection"
@@ -147,7 +153,12 @@
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
          "value": "True"
-      },    
+      },
+      "AI_API_KEY": {
+      "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
+         "required": false,
+         "value": ""
+      },      
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
@@ -158,9 +169,26 @@
          "required": false,
          "value": ""
       },
-      "LASTFM_API_KEY": {
-         "description": "Required for Lastfm, get your's from https://www.lastfm.com/",
+      "MONGO_DB_URI": {
+         "description": "Database URL From https://www.mongodb.com/",
          "required": false,
-         "value": ""      
+         "value": ""
+      },
+       "REDIS_URL": {
+         "description": "Redis URI create one from redislabs.com.",
+         "required": true,
+         "value": ""
+      },
+       "REDIS_PASS": {
+         "description": "Redis Password create one from redislabs.com.",
+         "required": true,
+         "value": ""
+      },
+      "REM_BG_API_KEY": {
+          "description": "API key from https://www.remove.bg/api .",
+          "required": false,
+          "value": ""
+      }
+      
    }
 }
